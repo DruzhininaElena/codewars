@@ -1,13 +1,10 @@
-// Description:
+// ❓ Description:
 // Your task is to write a function toLeetSpeak that converts a regular english sentence to Leetspeak.
-//
 // Consider only uppercase letters (no lowercase letters, no numbers) and spaces.
-//
 //     For example:
-//
 //     toLeetSpeak("LEET") returns "1337"
 
-// Solution:
+// ✔ Solution:
 function toLeetSpeak(str) {
     const alphabet = {
         A: '@',
