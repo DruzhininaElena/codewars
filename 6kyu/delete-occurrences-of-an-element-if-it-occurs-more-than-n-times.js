@@ -8,7 +8,7 @@
 
 function deleteNth(arr,n){
     let resultArray = []
-    arr.reduce((acc, i, index, arr) => {
+    arr.reduce((acc, i) => {
         if (acc.hasOwnProperty(i)) {
             acc[i] += 1;
             if (acc[i] <= n) {
