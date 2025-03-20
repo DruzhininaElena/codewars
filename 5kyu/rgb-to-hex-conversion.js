@@ -14,9 +14,10 @@
 
 const rgb = (r, g, b) => [r, g, b]
     .map(n => {
+        const hex = n.toString(16)
         if (n < 0) return '00'
         if (n > 255) return 'FF'
-        return n.toString(16).length === 1 ? `0${n.toString(16)}` : n.toString(16)
+        return hex.length === 1 ? `0${hex}` : hex
     })
     .join('')
     .toUpperCase()
